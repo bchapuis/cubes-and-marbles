@@ -15,7 +15,7 @@ import Cube10 from './Cube10'
 import Cube11 from './Cube11'
 import Cube12 from './Cube12'
 import Cube13 from './Cube13'
-import { useControls } from 'leva'
+import { Leva, useControls } from 'leva'
 import { useEffect, useRef, useState } from 'react'
 import { vec3 } from "@react-three/rapier";
 import Marble from './Marble'
@@ -141,7 +141,8 @@ export default function Experience() {
     }
 
     return <>
-        <Perf position="top-left" />
+        {/*<Perf position="top-left" />*/}
+
         <OrbitControls makeDefault />
 
         <OrthographicCamera
